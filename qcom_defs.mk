@@ -26,4 +26,10 @@ UM_6_6_FAMILY := $(UM_6_6_FAMILY) $(UM_5_10_FAMILY)
 UM_5_10_FAMILY :=
 endif
 
+ifeq ($(TARGET_KERNEL_VERSION),5.15)
+# UM 4.19 upgraded to UM 5.15
+UM_5_15_FAMILY := $(UM_5_15_FAMILY) bengal
+UM_4_19_FAMILY :=
+endif
+
 UM_6_12_FAMILY := canoe
